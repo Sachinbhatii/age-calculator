@@ -1,0 +1,82 @@
+.age-calculator {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid #3e4e5e;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f0f4f9 70%, #e3eaf5 100%);
+  box-shadow: 0 2px 16px rgba(60, 70, 80, 0.08);
+  display: grid;
+  gap: 1.5rem;
+  font-family: system-ui, sans-serif;
+}
+
+.age-calculator h2 {
+  margin: 0;
+  color: #234;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.age-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.age-form label {
+  font-size: 1.05em;
+  margin-bottom: 0.2em;
+  color: #2d3b4c;
+}
+
+.age-form input[type="date"] {
+  padding: 0.5em 0.75em;
+  font-size: 1em;
+  border: 1.5px solid #b4c0d3;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.age-form input[type="date"]:focus {
+  outline: none;
+  border-color: #3654d3;
+}
+
+.age-result {
+  background: #e6f2ff;
+  color: #1a3d5d;
+  padding: 0.8em 1em;
+  border-radius: 7px;
+  min-height: 2.3em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta-info {
+  margin-top: 0.3em;
+  font-size: 0.97em;
+  color: #42536a;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Responsive for mobile */
+@media (max-width: 520px) {
+  .age-calculator {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .age-form input[type="date"] {
+    font-size: 0.98em;
+    padding: 0.45em 0.6em;
+  }
+  .age-result {
+    font-size: 0.98em;
+  }
+}
